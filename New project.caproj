@@ -1,0 +1,2526 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>2m2oqhlgof90t</unique-id>
+    <saved-with-version>22700</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="Rotate" version="1">Rotate</behavior>
+        <behavior author="Scirra" id="Timer" version="1">Timer</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>480</width>
+        <height>854</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Portrait</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preview browser">Chrome</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="BG" sid="9227061541820193">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9190588855625021" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\My Art\WIP\001Totally Tubular\TTBGartWide2.gif">
+                        <collision-poly>
+                            <point x="0.251562" y="0.052" />
+                            <point x="0.690625" y="0.034" />
+                            <point x="0.6625" y="0.301" />
+                            <point x="0.682813" y="0.5925" />
+                            <point x="0.580469" y="0.68425" />
+                            <point x="0.759375" y="0.91" />
+                            <point x="0.509375" y="0.971" />
+                            <point x="0.271875" y="0.908001" />
+                            <point x="0.435156" y="0.711" />
+                            <point x="0.394922" y="0.4285" />
+                            <point x="0.284179" y="0.32725" />
+                            <point x="0.294433" y="0.238625" />
+                            <point x="0.396436" y="0.206313" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Player01" sid="7830906925269264">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="8Direction" sid="2355831002430483">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="9931439292464377">
+                    <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="2649622613620558">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5861933464859246" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTPlayerPaddlereverseRightREJECT\TTplayerBackpaddleRight-01.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="17" loop="0" name="Throw" pingpong="0" repeatcount="1" repeatto="0" sid="2396841181453926" speed="10">
+                    <frame duration="1" hotspotX="0.402778" hotspotY="0.498148" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\New folder\TTplayerPaddleAlphatest-05.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.402778" hotspotY="0.498148" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\New folder\TTplayerPaddleAlphatest-09.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.402778" hotspotY="0.498148" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\New folder\TTplayerPaddleAlphatest-10.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.402778" hotspotY="0.498148" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\New folder\TTplayerPaddleAlphatest-12.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.402778" hotspotY="0.498148" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\New folder\TTplayerPaddleAlphatest-13.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.402778" hotspotY="0.498148" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\New folder\TTplayerPaddleAlphatest-16.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.402778" hotspotY="0.498148" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\New folder\TTplayerPaddleAlphatest-17.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.4" hotspotY="0.501852" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\New folder\TTplayerPaddleAlphatest-20.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.402778" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\New folder\TTplayerPaddleAlphatest-23.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.402778" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\New folder\TTplayerPaddleAlphatest-24.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.402778" hotspotY="0.498148" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\New folder\TTplayerPaddleAlphatest-25.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.402778" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\New folder\TTplayerPaddleAlphatest-27.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.402778" hotspotY="0.498148" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\New folder\TTplayerPaddleAlphatest-28.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.402778" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\New folder\TTplayerPaddleAlphatest-30.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.402778" hotspotY="0.498148" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\New folder\TTplayerPaddleAlphatest-31.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.402778" hotspotY="0.498148" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\New folder\TTplayerPaddleAlphatest-32.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.402778" hotspotY="0.498148" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\New folder\TTplayerPaddleAlphatest-33.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="29" loop="0" name="PaddleRightFRWD" pingpong="0" repeatcount="1" repeatto="0" sid="6761027153019569" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddleForwardRight\TTplayerthrow3-03.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddleForwardRight\TTplayerthrow3-04.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddleForwardRight\TTplayerthrow3-05.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddleForwardRight\TTplayerthrow3-06.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddleForwardRight\TTplayerthrow3-07.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddleForwardRight\TTplayerthrow3-08.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddleForwardRight\TTplayerthrow3-09.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddleForwardRight\TTplayerthrow3-10.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddleForwardRight\TTplayerthrow3-11.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddleForwardRight\TTplayerthrow3-12.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddleForwardRight\TTplayerthrow3-13.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddleForwardRight\TTplayerthrow3-14.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddleForwardRight\TTplayerthrow3-15.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddleForwardRight\TTplayerthrow3-16.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddleForwardRight\TTplayerthrow3-17.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddleForwardRight\TTplayerthrow3-18.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddleForwardRight\TTplayerthrow3-19.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddleForwardRight\TTplayerthrow3-20.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddleForwardRight\TTplayerthrow3-21.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddleForwardRight\TTplayerthrow3-22.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddleForwardRight\TTplayerthrow3-23.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddleForwardRight\TTplayerthrow3-24.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddleForwardRight\TTplayerthrow3-25.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddleForwardRight\TTplayerthrow3-26.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddleForwardRight\TTplayerthrow3-27.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddleForwardRight\TTplayerthrow3-28.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddleForwardRight\TTplayerthrow3-29.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddleForwardRight\TTplayerthrow3-30.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddleForwardRight\TTplayerthrow3-31.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="28" loop="0" name="PaddleLeftFRWD" pingpong="0" repeatcount="1" repeatto="0" sid="6104248463233009" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddleForwardLEFT\TTplayerPDLfrwdLeft.png-05.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddleForwardLEFT\TTplayerPDLfrwdLeft.png-06.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddleForwardLEFT\TTplayerPDLfrwdLeft.png-07.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddleForwardLEFT\TTplayerPDLfrwdLeft.png-08.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddleForwardLEFT\TTplayerPDLfrwdLeft.png-09.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddleForwardLEFT\TTplayerPDLfrwdLeft.png-10.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddleForwardLEFT\TTplayerPDLfrwdLeft.png-11.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddleForwardLEFT\TTplayerPDLfrwdLeft.png-12.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddleForwardLEFT\TTplayerPDLfrwdLeft.png-13.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddleForwardLEFT\TTplayerPDLfrwdLeft.png-14.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddleForwardLEFT\TTplayerPDLfrwdLeft.png-15.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddleForwardLEFT\TTplayerPDLfrwdLeft.png-16.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddleForwardLEFT\TTplayerPDLfrwdLeft.png-17.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddleForwardLEFT\TTplayerPDLfrwdLeft.png-18.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddleForwardLEFT\TTplayerPDLfrwdLeft.png-19.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddleForwardLEFT\TTplayerPDLfrwdLeft.png-20.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddleForwardLEFT\TTplayerPDLfrwdLeft.png-21.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddleForwardLEFT\TTplayerPDLfrwdLeft.png-22.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddleForwardLEFT\TTplayerPDLfrwdLeft.png-23.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddleForwardLEFT\TTplayerPDLfrwdLeft.png-24.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddleForwardLEFT\TTplayerPDLfrwdLeft.png-25.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddleForwardLEFT\TTplayerPDLfrwdLeft.png-26.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddleForwardLEFT\TTplayerPDLfrwdLeft.png-27.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddleForwardLEFT\TTplayerPDLfrwdLeft.png-28.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddleForwardLEFT\TTplayerPDLfrwdLeft.png-29.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddleForwardLEFT\TTplayerPDLfrwdLeft.png-30.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddleForwardLEFT\TTplayerPDLfrwdLeft.png-31.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddleForwardLEFT\TTplayerPDLfrwdLeft.png-32.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="28" loop="0" name="PaddleRightRVRS" pingpong="0" repeatcount="1" repeatto="0" sid="9796717500740512" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTPlayerPaddlereverseRightREJECT\TTplayerBackpaddleRight-04.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTPlayerPaddlereverseRightREJECT\TTplayerBackpaddleRight-05.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTPlayerPaddlereverseRightREJECT\TTplayerBackpaddleRight-06.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTPlayerPaddlereverseRightREJECT\TTplayerBackpaddleRight-07.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTPlayerPaddlereverseRightREJECT\TTplayerBackpaddleRight-08.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTPlayerPaddlereverseRightREJECT\TTplayerBackpaddleRight-09.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTPlayerPaddlereverseRightREJECT\TTplayerBackpaddleRight-10.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTPlayerPaddlereverseRightREJECT\TTplayerBackpaddleRight-11.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTPlayerPaddlereverseRightREJECT\TTplayerBackpaddleRight-12.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTPlayerPaddlereverseRightREJECT\TTplayerBackpaddleRight-13.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTPlayerPaddlereverseRightREJECT\TTplayerBackpaddleRight-14.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTPlayerPaddlereverseRightREJECT\TTplayerBackpaddleRight-15.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTPlayerPaddlereverseRightREJECT\TTplayerBackpaddleRight-16.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTPlayerPaddlereverseRightREJECT\TTplayerBackpaddleRight-17.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTPlayerPaddlereverseRightREJECT\TTplayerBackpaddleRight-18.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTPlayerPaddlereverseRightREJECT\TTplayerBackpaddleRight-19.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTPlayerPaddlereverseRightREJECT\TTplayerBackpaddleRight-20.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTPlayerPaddlereverseRightREJECT\TTplayerBackpaddleRight-21.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTPlayerPaddlereverseRightREJECT\TTplayerBackpaddleRight-22.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTPlayerPaddlereverseRightREJECT\TTplayerBackpaddleRight-23.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTPlayerPaddlereverseRightREJECT\TTplayerBackpaddleRight-24.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTPlayerPaddlereverseRightREJECT\TTplayerBackpaddleRight-25.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTPlayerPaddlereverseRightREJECT\TTplayerBackpaddleRight-26.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTPlayerPaddlereverseRightREJECT\TTplayerBackpaddleRight-27.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTPlayerPaddlereverseRightREJECT\TTplayerBackpaddleRight-28.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTPlayerPaddlereverseRightREJECT\TTplayerBackpaddleRight-29.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTPlayerPaddlereverseRightREJECT\TTplayerBackpaddleRight-30.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTPlayerPaddlereverseRightREJECT\TTplayerBackpaddleRight-32.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="28" loop="0" name="PaddleLeftRVRS" pingpong="0" repeatcount="1" repeatto="0" sid="9819221291329827" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddlebackwardLEFT\TTplayerPDLbackwardLeft-04.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddlebackwardLEFT\TTplayerPDLbackwardLeft-05.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddlebackwardLEFT\TTplayerPDLbackwardLeft-06.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddlebackwardLEFT\TTplayerPDLbackwardLeft-07.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddlebackwardLEFT\TTplayerPDLbackwardLeft-08.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddlebackwardLEFT\TTplayerPDLbackwardLeft-09.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddlebackwardLEFT\TTplayerPDLbackwardLeft-10.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddlebackwardLEFT\TTplayerPDLbackwardLeft-11.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddlebackwardLEFT\TTplayerPDLbackwardLeft-12.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddlebackwardLEFT\TTplayerPDLbackwardLeft-13.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddlebackwardLEFT\TTplayerPDLbackwardLeft-14.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddlebackwardLEFT\TTplayerPDLbackwardLeft-15.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddlebackwardLEFT\TTplayerPDLbackwardLeft-16.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddlebackwardLEFT\TTplayerPDLbackwardLeft-17.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddlebackwardLEFT\TTplayerPDLbackwardLeft-18.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddlebackwardLEFT\TTplayerPDLbackwardLeft-19.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddlebackwardLEFT\TTplayerPDLbackwardLeft-20.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddlebackwardLEFT\TTplayerPDLbackwardLeft-21.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddlebackwardLEFT\TTplayerPDLbackwardLeft-22.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddlebackwardLEFT\TTplayerPDLbackwardLeft-23.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddlebackwardLEFT\TTplayerPDLbackwardLeft-24.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddlebackwardLEFT\TTplayerPDLbackwardLeft-25.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddlebackwardLEFT\TTplayerPDLbackwardLeft-26.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddlebackwardLEFT\TTplayerPDLbackwardLeft-27.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddlebackwardLEFT\TTplayerPDLbackwardLeft-28.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddlebackwardLEFT\TTplayerPDLbackwardLeft-29.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddlebackwardLEFT\TTplayerPDLbackwardLeft-30.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\TTplayerPaddlebackwardLEFT\TTplayerPDLbackwardLeft-31.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.737037" />
+                            <point x="0.225" y="0.538889" />
+                            <point x="0.277778" y="0.331481" />
+                            <point x="0.440278" y="0.242593" />
+                            <point x="0.579166" y="0.287037" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.597222" y="0.724074" />
+                            <point x="0.434722" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mouse" sid="2667688195434957">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Keyboard" sid="929115561622812">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Can" sid="6800469006175734">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="release" name="throwDelay" sid="6554354165588521" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Timer" sid="3309388433490201">
+                    <behavior id="Timer" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="7472004960732317">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="2000526134829465">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="528884706435328" speed="8">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502538" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\Beercan.png">
+                        <collision-poly>
+                            <point x="0.0583333" y="0.0609137" />
+                            <point x="0.5" y="0" />
+                            <point x="0.933333" y="0.0507614" />
+                            <point x="0.958333" y="0.532995" />
+                            <point x="0.925" y="0.893401" />
+                            <point x="0.483333" y="0.994924" />
+                            <point x="0.0583333" y="0.893401" />
+                            <point x="0.0333333" y="0.497462" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.497462" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.939086" y="0.0583333" />
+                            <point x="1" y="0.5" />
+                            <point x="0.949239" y="0.933333" />
+                            <point x="0.467005" y="0.958333" />
+                            <point x="0.106599" y="0.925" />
+                            <point x="0.00507599" y="0.483333" />
+                            <point x="0.106599" y="0.0583333" />
+                            <point x="0.502538" y="0.0333333" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.497462">
+                        <collision-poly>
+                            <point x="0.941667" y="0.939086" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0666667" y="0.949239" />
+                            <point x="0.0416667" y="0.467005" />
+                            <point x="0.075" y="0.106599" />
+                            <point x="0.516667" y="0.00507599" />
+                            <point x="0.941667" y="0.106599" />
+                            <point x="0.966667" y="0.502538" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.502538" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.0609137" y="0.941667" />
+                            <point x="0" y="0.5" />
+                            <point x="0.0507615" y="0.0666667" />
+                            <point x="0.532995" y="0.0416667" />
+                            <point x="0.893401" y="0.075" />
+                            <point x="0.994924" y="0.516667" />
+                            <point x="0.893401" y="0.941667" />
+                            <point x="0.497462" y="0.966667" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="FireBall" sid="3477203936536842">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5025544501202357" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Explosion" sid="1221904654788328">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="6220029045407148">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7701643664007931" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504951" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\explode.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="RunAwaySki" sid="135679012032112">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Health" sid="9435148697189297" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Bullet" sid="5595399263070013">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="Rotate" sid="2209326772391702">
+                    <behavior id="Rotate" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8408032103249396" speed="5">
+                    <frame duration="1" hotspotX="0.483221" hotspotY="-1.64167" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\001Totally Tubular\PlayfieldPieces\JetSki.png">
+                        <collision-poly>
+                            <point x="0.805369" y="0.125" />
+                            <point x="1" y="0.516667" />
+                            <point x="0.828859" y="0.9" />
+                            <point x="0.5" y="0.9" />
+                            <point x="0.0872483" y="0.866667" />
+                            <point x="0.00335574" y="0.516667" />
+                            <point x="0.0838926" y="0.15" />
+                            <point x="0.5" y="0.133333" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TriggerRock" sid="9775740024922192">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="1649742437992177">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2992079287310702" speed="5">
+                    <frame duration="1" hotspotX="0.45" hotspotY="0.506" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="FallingRock2" sid="646029079403083">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="2885491700593143">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2865630328792861" speed="5">
+                    <frame duration="1" hotspotX="0.45" hotspotY="0.506" />
+                    <frame duration="1" hotspotX="0.48" hotspotY="0.456">
+                        <collision-poly>
+                            <point x="0.75" y="0.25" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.25" y="0.75" />
+                            <point x="0.25" y="0.25" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.558" hotspotY="0.506">
+                        <collision-poly>
+                            <point x="0.75" y="0.75" />
+                            <point x="0.25" y="0.75" />
+                            <point x="0.25" y="0.25" />
+                            <point x="0.75" y="0.25" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.486" hotspotY="0.562">
+                        <collision-poly>
+                            <point x="0.25" y="0.75" />
+                            <point x="0.25" y="0.25" />
+                            <point x="0.75" y="0.25" />
+                            <point x="0.75" y="0.75" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="FallingRock3" sid="5502244035522668">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="2359483692625679">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7918931219225481" speed="5">
+                    <frame duration="1" hotspotX="0.45" hotspotY="0.506" />
+                    <frame duration="1" hotspotX="0.48" hotspotY="0.456">
+                        <collision-poly>
+                            <point x="0.75" y="0.25" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.25" y="0.75" />
+                            <point x="0.25" y="0.25" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.558" hotspotY="0.506">
+                        <collision-poly>
+                            <point x="0.75" y="0.75" />
+                            <point x="0.25" y="0.75" />
+                            <point x="0.25" y="0.25" />
+                            <point x="0.75" y="0.25" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.486" hotspotY="0.562">
+                        <collision-poly>
+                            <point x="0.25" y="0.75" />
+                            <point x="0.25" y="0.25" />
+                            <point x="0.75" y="0.25" />
+                            <point x="0.75" y="0.75" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TriggerRock2" sid="649774447745611">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="3647739762384028">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8527540554424605" speed="5">
+                    <frame duration="1" hotspotX="0.45" hotspotY="0.506" />
+                    <frame duration="1" hotspotX="0.48" hotspotY="0.456">
+                        <collision-poly>
+                            <point x="0.75" y="0.25" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.25" y="0.75" />
+                            <point x="0.25" y="0.25" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.558" hotspotY="0.506">
+                        <collision-poly>
+                            <point x="0.75" y="0.75" />
+                            <point x="0.25" y="0.75" />
+                            <point x="0.25" y="0.25" />
+                            <point x="0.75" y="0.25" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.486" hotspotY="0.562">
+                        <collision-poly>
+                            <point x="0.25" y="0.75" />
+                            <point x="0.25" y="0.25" />
+                            <point x="0.75" y="0.25" />
+                            <point x="0.75" y="0.75" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TriggerRock3" sid="6997108084059628">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="5448261033764587">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8257251371076173" speed="5">
+                    <frame duration="1" hotspotX="0.45" hotspotY="0.506" />
+                    <frame duration="1" hotspotX="0.48" hotspotY="0.456">
+                        <collision-poly>
+                            <point x="0.75" y="0.25" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.25" y="0.75" />
+                            <point x="0.25" y="0.25" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.558" hotspotY="0.506">
+                        <collision-poly>
+                            <point x="0.75" y="0.75" />
+                            <point x="0.25" y="0.75" />
+                            <point x="0.25" y="0.25" />
+                            <point x="0.75" y="0.25" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.486" hotspotY="0.562">
+                        <collision-poly>
+                            <point x="0.25" y="0.75" />
+                            <point x="0.25" y="0.25" />
+                            <point x="0.75" y="0.25" />
+                            <point x="0.75" y="0.75" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BG2" sid="5032005140251731">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4175739018750254" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\magicsean\Pictures\MyArt\WIP\TTBGartWide.tif">
+                        <collision-poly>
+                            <point x="0.296875" y="0" />
+                            <point x="0.7" y="0" />
+                            <point x="0.709375" y="1" />
+                            <point x="0.309375" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="FallingRock" sid="2554934568302882">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="1068822051939972">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="16" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="123849979600715" speed="5">
+                    <frame duration="1" hotspotX="0.446" hotspotY="0.512">
+                        <collision-poly>
+                            <point x="0.332" y="0.338" />
+                            <point x="0.506" y="0.304" />
+                            <point x="0.649001" y="0.508" />
+                            <point x="0.614501" y="0.656" />
+                            <point x="0.568001" y="0.700001" />
+                            <point x="0.391" y="0.715" />
+                            <point x="0.32" y="0.658" />
+                            <point x="0.261" y="0.531" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.456" hotspotY="0.562">
+                        <collision-poly>
+                            <point x="0.332" y="0.338" />
+                            <point x="0.506" y="0.304" />
+                            <point x="0.649001" y="0.508" />
+                            <point x="0.614501" y="0.656" />
+                            <point x="0.568001" y="0.700001" />
+                            <point x="0.391" y="0.715" />
+                            <point x="0.32" y="0.658" />
+                            <point x="0.261" y="0.531" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.378" hotspotY="0.546">
+                        <collision-poly>
+                            <point x="0.332" y="0.338" />
+                            <point x="0.506" y="0.304" />
+                            <point x="0.649001" y="0.508" />
+                            <point x="0.614501" y="0.656" />
+                            <point x="0.568001" y="0.700001" />
+                            <point x="0.391" y="0.715" />
+                            <point x="0.32" y="0.658" />
+                            <point x="0.261" y="0.531" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.562">
+                        <collision-poly>
+                            <point x="0.332" y="0.338" />
+                            <point x="0.506" y="0.304" />
+                            <point x="0.649001" y="0.508" />
+                            <point x="0.614501" y="0.656" />
+                            <point x="0.568001" y="0.700001" />
+                            <point x="0.391" y="0.715" />
+                            <point x="0.32" y="0.658" />
+                            <point x="0.261" y="0.531" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.45" hotspotY="0.506">
+                        <collision-poly>
+                            <point x="0.332" y="0.338" />
+                            <point x="0.506" y="0.304" />
+                            <point x="0.649001" y="0.508" />
+                            <point x="0.614501" y="0.656" />
+                            <point x="0.568001" y="0.700001" />
+                            <point x="0.391" y="0.715" />
+                            <point x="0.32" y="0.658" />
+                            <point x="0.261" y="0.531" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.494" hotspotY="0.45">
+                        <collision-poly>
+                            <point x="0.662" y="0.332" />
+                            <point x="0.696" y="0.506" />
+                            <point x="0.492" y="0.649001" />
+                            <point x="0.344" y="0.614501" />
+                            <point x="0.299999" y="0.568001" />
+                            <point x="0.285" y="0.391" />
+                            <point x="0.342" y="0.32" />
+                            <point x="0.469" y="0.261" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.3325" hotspotY="0.46">
+                        <collision-poly>
+                            <point x="0.662" y="0.332" />
+                            <point x="0.696" y="0.506" />
+                            <point x="0.492" y="0.649001" />
+                            <point x="0.344" y="0.614501" />
+                            <point x="0.299999" y="0.568001" />
+                            <point x="0.285" y="0.391" />
+                            <point x="0.342" y="0.32" />
+                            <point x="0.469" y="0.261" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.246667" hotspotY="0.463333">
+                        <collision-poly>
+                            <point x="0.662" y="0.332" />
+                            <point x="0.696" y="0.506" />
+                            <point x="0.492" y="0.649001" />
+                            <point x="0.344" y="0.614501" />
+                            <point x="0.299999" y="0.568001" />
+                            <point x="0.285" y="0.391" />
+                            <point x="0.342" y="0.32" />
+                            <point x="0.469" y="0.261" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.21" hotspotY="0.505">
+                        <collision-poly>
+                            <point x="0.332" y="0.338" />
+                            <point x="0.506" y="0.304" />
+                            <point x="0.649001" y="0.508" />
+                            <point x="0.614501" y="0.656" />
+                            <point x="0.568001" y="0.700001" />
+                            <point x="0.391" y="0.715" />
+                            <point x="0.32" y="0.658" />
+                            <point x="0.261" y="0.531" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.04" hotspotY="0.55">
+                        <collision-poly>
+                            <point x="0.332" y="0.338" />
+                            <point x="0.506" y="0.304" />
+                            <point x="0.649001" y="0.508" />
+                            <point x="0.614501" y="0.656" />
+                            <point x="0.568001" y="0.700001" />
+                            <point x="0.391" y="0.715" />
+                            <point x="0.32" y="0.658" />
+                            <point x="0.261" y="0.531" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="-0.01" hotspotY="0.51" />
+                    <frame duration="1" hotspotX="0.02" hotspotY="0.49" />
+                    <frame duration="1" hotspotX="0.01" hotspotY="0.54" />
+                    <frame duration="1" hotspotX="0" hotspotY="0.55" />
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.01" hotspotY="0.51" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="FallingRock4" sid="5475273374473872">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="6390020561062807">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="16" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5521042197951714" speed="5">
+                    <frame duration="1" hotspotX="0.446" hotspotY="0.512">
+                        <collision-poly>
+                            <point x="0.332" y="0.338" />
+                            <point x="0.506" y="0.304" />
+                            <point x="0.649001" y="0.508" />
+                            <point x="0.614501" y="0.656" />
+                            <point x="0.568001" y="0.700001" />
+                            <point x="0.391" y="0.715" />
+                            <point x="0.32" y="0.658" />
+                            <point x="0.261" y="0.531" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.456" hotspotY="0.562">
+                        <collision-poly>
+                            <point x="0.332" y="0.338" />
+                            <point x="0.506" y="0.304" />
+                            <point x="0.649001" y="0.508" />
+                            <point x="0.614501" y="0.656" />
+                            <point x="0.568001" y="0.700001" />
+                            <point x="0.391" y="0.715" />
+                            <point x="0.32" y="0.658" />
+                            <point x="0.261" y="0.531" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.378" hotspotY="0.546">
+                        <collision-poly>
+                            <point x="0.332" y="0.338" />
+                            <point x="0.506" y="0.304" />
+                            <point x="0.649001" y="0.508" />
+                            <point x="0.614501" y="0.656" />
+                            <point x="0.568001" y="0.700001" />
+                            <point x="0.391" y="0.715" />
+                            <point x="0.32" y="0.658" />
+                            <point x="0.261" y="0.531" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.562">
+                        <collision-poly>
+                            <point x="0.332" y="0.338" />
+                            <point x="0.506" y="0.304" />
+                            <point x="0.649001" y="0.508" />
+                            <point x="0.614501" y="0.656" />
+                            <point x="0.568001" y="0.700001" />
+                            <point x="0.391" y="0.715" />
+                            <point x="0.32" y="0.658" />
+                            <point x="0.261" y="0.531" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.45" hotspotY="0.506">
+                        <collision-poly>
+                            <point x="0.332" y="0.338" />
+                            <point x="0.506" y="0.304" />
+                            <point x="0.649001" y="0.508" />
+                            <point x="0.614501" y="0.656" />
+                            <point x="0.568001" y="0.700001" />
+                            <point x="0.391" y="0.715" />
+                            <point x="0.32" y="0.658" />
+                            <point x="0.261" y="0.531" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.494" hotspotY="0.45">
+                        <collision-poly>
+                            <point x="0.662" y="0.332" />
+                            <point x="0.696" y="0.506" />
+                            <point x="0.492" y="0.649001" />
+                            <point x="0.344" y="0.614501" />
+                            <point x="0.299999" y="0.568001" />
+                            <point x="0.285" y="0.391" />
+                            <point x="0.342" y="0.32" />
+                            <point x="0.469" y="0.261" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.3325" hotspotY="0.46">
+                        <collision-poly>
+                            <point x="0.662" y="0.332" />
+                            <point x="0.696" y="0.506" />
+                            <point x="0.492" y="0.649001" />
+                            <point x="0.344" y="0.614501" />
+                            <point x="0.299999" y="0.568001" />
+                            <point x="0.285" y="0.391" />
+                            <point x="0.342" y="0.32" />
+                            <point x="0.469" y="0.261" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.246667" hotspotY="0.463333">
+                        <collision-poly>
+                            <point x="0.662" y="0.332" />
+                            <point x="0.696" y="0.506" />
+                            <point x="0.492" y="0.649001" />
+                            <point x="0.344" y="0.614501" />
+                            <point x="0.299999" y="0.568001" />
+                            <point x="0.285" y="0.391" />
+                            <point x="0.342" y="0.32" />
+                            <point x="0.469" y="0.261" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.21" hotspotY="0.505">
+                        <collision-poly>
+                            <point x="0.332" y="0.338" />
+                            <point x="0.506" y="0.304" />
+                            <point x="0.649001" y="0.508" />
+                            <point x="0.614501" y="0.656" />
+                            <point x="0.568001" y="0.700001" />
+                            <point x="0.391" y="0.715" />
+                            <point x="0.32" y="0.658" />
+                            <point x="0.261" y="0.531" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.04" hotspotY="0.55">
+                        <collision-poly>
+                            <point x="0.332" y="0.338" />
+                            <point x="0.506" y="0.304" />
+                            <point x="0.649001" y="0.508" />
+                            <point x="0.614501" y="0.656" />
+                            <point x="0.568001" y="0.700001" />
+                            <point x="0.391" y="0.715" />
+                            <point x="0.32" y="0.658" />
+                            <point x="0.261" y="0.531" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="-0.01" hotspotY="0.51" />
+                    <frame duration="1" hotspotX="0.02" hotspotY="0.49" />
+                    <frame duration="1" hotspotX="0.01" hotspotY="0.54" />
+                    <frame duration="1" hotspotX="0" hotspotY="0.55" />
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.01" hotspotY="0.51" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="5629119927130398">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7647828071863227" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="FallingRock5" sid="6207999981842572">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="1854591567129728">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="16" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2845854252702045" speed="5">
+                    <frame duration="1" hotspotX="0.446" hotspotY="0.512">
+                        <collision-poly>
+                            <point x="0.332" y="0.338" />
+                            <point x="0.506" y="0.304" />
+                            <point x="0.649001" y="0.508" />
+                            <point x="0.614501" y="0.656" />
+                            <point x="0.568001" y="0.700001" />
+                            <point x="0.391" y="0.715" />
+                            <point x="0.32" y="0.658" />
+                            <point x="0.261" y="0.531" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.456" hotspotY="0.562">
+                        <collision-poly>
+                            <point x="0.332" y="0.338" />
+                            <point x="0.506" y="0.304" />
+                            <point x="0.649001" y="0.508" />
+                            <point x="0.614501" y="0.656" />
+                            <point x="0.568001" y="0.700001" />
+                            <point x="0.391" y="0.715" />
+                            <point x="0.32" y="0.658" />
+                            <point x="0.261" y="0.531" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.378" hotspotY="0.546">
+                        <collision-poly>
+                            <point x="0.332" y="0.338" />
+                            <point x="0.506" y="0.304" />
+                            <point x="0.649001" y="0.508" />
+                            <point x="0.614501" y="0.656" />
+                            <point x="0.568001" y="0.700001" />
+                            <point x="0.391" y="0.715" />
+                            <point x="0.32" y="0.658" />
+                            <point x="0.261" y="0.531" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.562">
+                        <collision-poly>
+                            <point x="0.332" y="0.338" />
+                            <point x="0.506" y="0.304" />
+                            <point x="0.649001" y="0.508" />
+                            <point x="0.614501" y="0.656" />
+                            <point x="0.568001" y="0.700001" />
+                            <point x="0.391" y="0.715" />
+                            <point x="0.32" y="0.658" />
+                            <point x="0.261" y="0.531" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.45" hotspotY="0.506">
+                        <collision-poly>
+                            <point x="0.332" y="0.338" />
+                            <point x="0.506" y="0.304" />
+                            <point x="0.649001" y="0.508" />
+                            <point x="0.614501" y="0.656" />
+                            <point x="0.568001" y="0.700001" />
+                            <point x="0.391" y="0.715" />
+                            <point x="0.32" y="0.658" />
+                            <point x="0.261" y="0.531" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.494" hotspotY="0.45">
+                        <collision-poly>
+                            <point x="0.662" y="0.332" />
+                            <point x="0.696" y="0.506" />
+                            <point x="0.492" y="0.649001" />
+                            <point x="0.344" y="0.614501" />
+                            <point x="0.299999" y="0.568001" />
+                            <point x="0.285" y="0.391" />
+                            <point x="0.342" y="0.32" />
+                            <point x="0.469" y="0.261" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.63" hotspotY="0.4675">
+                        <collision-poly>
+                            <point x="0.662" y="0.332" />
+                            <point x="0.696" y="0.506" />
+                            <point x="0.492" y="0.649001" />
+                            <point x="0.344" y="0.614501" />
+                            <point x="0.299999" y="0.568001" />
+                            <point x="0.285" y="0.391" />
+                            <point x="0.342" y="0.32" />
+                            <point x="0.469" y="0.261" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.783333" hotspotY="0.45">
+                        <collision-poly>
+                            <point x="0.662" y="0.332" />
+                            <point x="0.696" y="0.506" />
+                            <point x="0.492" y="0.649001" />
+                            <point x="0.344" y="0.614501" />
+                            <point x="0.299999" y="0.568001" />
+                            <point x="0.285" y="0.391" />
+                            <point x="0.342" y="0.32" />
+                            <point x="0.469" y="0.261" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="1" hotspotY="0.51">
+                        <collision-poly>
+                            <point x="0.332" y="0.338" />
+                            <point x="0.506" y="0.304" />
+                            <point x="0.649001" y="0.508" />
+                            <point x="0.614501" y="0.656" />
+                            <point x="0.568001" y="0.700001" />
+                            <point x="0.391" y="0.715" />
+                            <point x="0.32" y="0.658" />
+                            <point x="0.261" y="0.531" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="1.35" hotspotY="0.54">
+                        <collision-poly>
+                            <point x="0.332" y="0.338" />
+                            <point x="0.506" y="0.304" />
+                            <point x="0.649001" y="0.508" />
+                            <point x="0.614501" y="0.656" />
+                            <point x="0.568001" y="0.700001" />
+                            <point x="0.391" y="0.715" />
+                            <point x="0.32" y="0.658" />
+                            <point x="0.261" y="0.531" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="1.51" hotspotY="0.55" />
+                    <frame duration="1" hotspotX="1.49" hotspotY="0.53" />
+                    <frame duration="1" hotspotX="1.55" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="1.72" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="1.7" hotspotY="0.55" />
+                    <frame duration="1" hotspotX="1.61" hotspotY="0.53" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="8550455285739698">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1893718922880091" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TriggerRock4" sid="3928093709679702">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="1686932995242386">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5099212326192551" speed="5">
+                    <frame duration="1" hotspotX="0.45" hotspotY="0.506" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Collisionobject" sid="8569864562039685">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="5435902447276738">
+                    <behavior id="Physics" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="9641493166450911">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8424005723336461" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.708" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite4" sid="7704434602313434">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7642345601098191" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite5" sid="3969247568970387">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1287182615540037" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite6" sid="5507344117957945">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1213403533409111" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite7" sid="2732210870126058">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1411961357745768" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite8" sid="275786739824049">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4354986434997731" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Spray" sid="8377317028092009">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="2885170871908081">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="543720681433374" speed="8">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+        <layout>TEST FOR GIT EVERYOEN SHOUDL SEE THIS.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Mouse" uid="2" />
+        <global-instance type="Keyboard" uid="3" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

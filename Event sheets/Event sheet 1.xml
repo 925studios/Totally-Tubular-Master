@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <event-block sid="1539004107261121">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="8356475758266361" type="System" />
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="8504258143341591">
+            <conditions>
+                <condition id="0" name="On click" sid="5657859253794195" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="4000691000832352" type="Player01">
+                    <param id="0" name="Animation">&quot;Throw&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="5645666708495596" type="Player01">
+                    <param id="0" name="Object">Can</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6276505472337154">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="690360126480904" type="Can">
+                    <param id="0" name="Object">RunAwaySki</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Subtract from" sid="3753219528064026" type="RunAwaySki">
+                    <param id="0" name="Instance variable">Health</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="6423840773289203" type="Can">
+                    <param id="0" name="Object">Explosion</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="6601993844440958" type="Can" />
+            </actions>
+        </event-block>
+        <event-block sid="2370559534770857">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="322059292254476" type="RunAwaySki">
+                    <param id="0" name="Instance variable">Health</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="3049040096203927" type="Spray" />
+                <action id="-9" name="Destroy" sid="1383442743088543" type="RunAwaySki" />
+                <action id="0" name="Spawn another object" sid="4612477890192902" type="RunAwaySki">
+                    <param id="0" name="Object">Explosion</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3941101780099384">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="7322118222626696" type="TriggerRock">
+                    <param id="0" name="Object">Player01</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="1373897425317163" type="TriggerRock">
+                    <param id="0" name="Object">FallingRock</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="3627674321684541" type="TriggerRock" />
+            </actions>
+        </event-block>
+        <event-block sid="821825438300277">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="8181670945819753" type="FallingRock">
+                    <param id="0" name="Object">Player01</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="5380535950081137" type="Player01" />
+            </actions>
+        </event-block>
+        <event-block sid="9734361775741653">
+            <conditions>
+                <condition id="5" name="On any finished" sid="4129834074237047" type="FallingRock" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="3032947232492688" type="FallingRock" />
+            </actions>
+        </event-block>
+        <event-block sid="371828743215378">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="6023263906643783" type="TriggerRock4">
+                    <param id="0" name="Object">Player01</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="9064873700170405" type="TriggerRock4">
+                    <param id="0" name="Object">FallingRock5</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="7635113803697832" type="TriggerRock4" />
+            </actions>
+        </event-block>
+        <event-block sid="5841404275557143">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="8971936630313278" type="FallingRock5">
+                    <param id="0" name="Object">Player01</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="2776767430936527" type="Player01" />
+            </actions>
+        </event-block>
+        <event-block sid="5991392678445666">
+            <conditions>
+                <condition id="5" name="On any finished" sid="330653781516793" type="FallingRock5" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="4606005341088028" type="FallingRock5" />
+            </actions>
+        </event-block>
+        <event-block sid="8502408092668345">
+            <conditions>
+                <condition id="-18" name="On created" sid="3599584003164796" type="RunAwaySki" />
+            </conditions>
+            <actions>
+                <action behavior="Pin" id="0" name="Pin to object" sid="539587137446914" type="Spray">
+                    <param id="0" name="Pin to">RunAwaySki</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6829985649798105">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="941811147858252" type="Can">
+                    <param id="0" name="Object">Spray</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="4" name="Bounce off object" sid="5285665357550684" type="Can">
+                    <param id="0" name="Object">Spray</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
